@@ -10,6 +10,11 @@
       "StackName": "amplify-bookrecordapp-staging-44552",
       "StackId": "arn:aws:cloudformation:ap-northeast-1:827621781261:stack/amplify-bookrecordapp-staging-44552/6895e790-d691-11ed-be4c-0ebfa747a3f9",
       "AmplifyAppId": "dql9s6x75v69i"
+    },
+    "categories": {
+      "auth": {
+        "bookrecordapp31e3eb59": {}
+      }
     }
   }
 }

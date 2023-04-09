@@ -4,6 +4,7 @@ type Book @model @auth(rules: [{allow: public}]) {
   image: String
   price: Int
   booksgroupID: ID! @index(name: "byBooksGroup")
+  BooksGroup: BooksGroup @belongsTo(fields: ["booksgroupID"])
 }
 
 type BooksGroup @model @auth(rules: [{allow: public}]) {
@@ -12,3 +13,4 @@ type BooksGroup @model @auth(rules: [{allow: public}]) {
   image: String
   Books: [Book] @hasMany(indexName: "byBooksGroup", fields: ["id"])
 }
+ 

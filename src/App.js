@@ -4,7 +4,8 @@ import { Amplify } from 'aws-amplify';
 import { Authenticator } from '@aws-amplify/ui-react';
 import awsExports from './aws-exports';
 
-import BooksGroup from './layout/BooksGroup';
+import BooksGroup from './components/layout/BooksGroup';
+import CreateBooksGroup from './components/function/CreateBooksGroup';
 
 
 Amplify.configure(awsExports);
@@ -23,6 +24,7 @@ function App() {
             </h2>
           </header>
           <BooksGroup />
+          <CreateBooksGroup />
         </div>
       )}
     </Authenticator>

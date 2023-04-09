@@ -16,5 +16,11 @@ export type AmplifyDependentResourcesAttributes = {
       "UserPoolId": "string",
       "UserPoolName": "string"
     }
+  },
+  "storage": {
+    "s3bookrecordappstoragedc85867d": {
+      "BucketName": "string",
+      "Region": "string"
+    }
   }
 }

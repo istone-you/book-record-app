@@ -1,6 +1,6 @@
 import { ModelInit, MutableModel, __modelMeta__, ManagedIdentifier } from "@aws-amplify/datastore";
 // @ts-ignore
-import { LazyLoading, LazyLoadingDisabled, AsyncCollection } from "@aws-amplify/datastore";
+import { LazyLoading, LazyLoadingDisabled, AsyncItem, AsyncCollection } from "@aws-amplify/datastore";
 
 
 
@@ -16,6 +16,7 @@ type EagerBook = {
   readonly image?: string | null;
   readonly price?: number | null;
   readonly booksgroupID: string;
+  readonly BooksGroup?: BooksGroup | null;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }
@@ -30,6 +31,7 @@ type LazyBook = {
   readonly image?: string | null;
   readonly price?: number | null;
   readonly booksgroupID: string;
+  readonly BooksGroup: AsyncItem<BooksGroup | undefined>;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }

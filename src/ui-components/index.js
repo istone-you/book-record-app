@@ -4,7 +4,6 @@
  * Any changes to this file will be overwritten when running amplify pull. *
  **************************************************************************/
 
-export { default as BooksGroupCollection } from "./BooksGroupCollection";
 export { default as BooksGroup } from "./BooksGroup";
 export { default as studioTheme } from "./studioTheme";
 export { default as BooksGroupCreateForm } from "./BooksGroupCreateForm";

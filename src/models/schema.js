@@ -38,6 +38,21 @@ export const schema = {
                     "isRequired": true,
                     "attributes": []
                 },
+                "BooksGroup": {
+                    "name": "BooksGroup",
+                    "isArray": false,
+                    "type": {
+                        "model": "BooksGroup"
+                    },
+                    "isRequired": false,
+                    "attributes": [],
+                    "association": {
+                        "connectionType": "BELONGS_TO",
+                        "targetNames": [
+                            "booksgroupID"
+                        ]
+                    }
+                },
                 "createdAt": {
                     "name": "createdAt",
                     "isArray": false,
@@ -125,7 +140,7 @@ export const schema = {
                     "association": {
                         "connectionType": "HAS_MANY",
                         "associatedWith": [
-                            "booksgroupID"
+                            "BooksGroup"
                         ]
                     }
                 },
@@ -175,5 +190,5 @@ export const schema = {
     "enums": {},
     "nonModels": {},
     "codegenVersion": "3.4.0",
-    "version": "ccae4df911744f390890513699046757"
+    "version": "7d7961ddf82f13a60ddfa285846b9e53"
 };

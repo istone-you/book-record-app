@@ -1,0 +1,14 @@
+{
+  "resourceName": "s3bookrecordappstoragedc85867d",
+  "bucketName": "book-record-app-storage-dc85867d",
+  "policyUUID": "333e98f1",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ]
+}

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { API, graphqlOperation } from 'aws-amplify'
 import { listBooksGroups } from '../graphql/queries'
+import Group from '../common/Group'
 
 
 const BooksGroup = () => {
@@ -21,17 +22,11 @@ const BooksGroup = () => {
     return (
         <div>
             <h1>Books</h1>
-            <ul>
-                {books.map((book, index) => (
-                    <li key={index}>
-                        <h2>{book.title}</h2>
-                        <p>{book.id}</p>
-                        <img src={book.image} alt={book.title} />
-                        <p>{book.createdAt}</p>
-                        <p>{book.updatedAt}</p>
-                    </li>
+            <div style={{ display: "flex" }}>
+                {books.map((book) => (
+                    <Group book={book} />
                 ))}
-            </ul>
+            </div>
         </div>
     )
 }

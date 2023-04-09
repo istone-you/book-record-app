@@ -4,7 +4,7 @@ import { Amplify } from 'aws-amplify';
 import { Authenticator } from '@aws-amplify/ui-react';
 import awsExports from './aws-exports';
 
-import BooksGroup from './common/BooksGroup';
+import BooksGroup from './layout/BooksGroup';
 
 
 Amplify.configure(awsExports);

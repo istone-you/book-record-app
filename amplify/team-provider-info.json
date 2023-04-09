@@ -1,0 +1,15 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-bookrecordapp-staging-44552-authRole",
+      "UnauthRoleArn": "arn:aws:iam::827621781261:role/amplify-bookrecordapp-staging-44552-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::827621781261:role/amplify-bookrecordapp-staging-44552-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-bookrecordapp-staging-44552-deployment",
+      "UnauthRoleName": "amplify-bookrecordapp-staging-44552-unauthRole",
+      "StackName": "amplify-bookrecordapp-staging-44552",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:827621781261:stack/amplify-bookrecordapp-staging-44552/6895e790-d691-11ed-be4c-0ebfa747a3f9",
+      "AmplifyAppId": "dql9s6x75v69i"
+    }
+  }
+}

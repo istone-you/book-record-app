@@ -1,0 +1,14 @@
+type Book @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  title: String!
+  image: String
+  price: Int
+  booksgroupID: ID! @index(name: "byBooksGroup")
+}
+
+type BooksGroup @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  title: String!
+  image: String
+  Books: [Book] @hasMany(indexName: "byBooksGroup", fields: ["id"])
+}
